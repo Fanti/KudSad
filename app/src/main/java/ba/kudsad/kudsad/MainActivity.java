@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.content.Intent;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -38,11 +39,22 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.calendar:
+                Intent intCalendar = new Intent(MainActivity.this, Calendar.class);
+                startActivity(intCalendar);
+
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
+        //noinspection SimplifiableIfStatement
+       /* if (id == R.id.action_settings) {
+            return true;
+        }
+*/
+       // return super.onOptionsItemSelected(item);
     }
 }
