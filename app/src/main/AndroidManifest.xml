@@ -22,7 +22,10 @@
             android:name=".Calendar"
             android:label="@string/action_Calendar" >
         </activity>
-
+        <activity
+            android:name=".News"
+            android:label="@string/action_News" >
+        </activity>
 
      </application>
 

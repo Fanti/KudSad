@@ -46,6 +46,11 @@ public class MainActivity extends ActionBarActivity {
 
                 return true;
 
+            case R.id.news:
+                Intent intNews = new Intent(MainActivity.this,News.class);
+                startActivity(intNews);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

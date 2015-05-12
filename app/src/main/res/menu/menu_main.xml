@@ -10,4 +10,10 @@
         app:showAsAction="always"
         android:title="@string/action_Calendar"/>
 
+    <item
+        android:id="@+id/news"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        android:title="@string/action_News"/>
+
 </menu>
