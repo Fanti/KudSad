@@ -51,6 +51,11 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intNews);
                 return true;
 
+            case R.id.action_search:
+                Intent intSearch = new Intent(MainActivity.this,Search.class);
+                startActivity(intSearch);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

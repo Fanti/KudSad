@@ -18,13 +18,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Calendar"
             android:label="@string/action_Calendar" >
         </activity>
+
         <activity
             android:name=".News"
             android:label="@string/action_News" >
+        </activity>
+
+        <activity
+            android:name=".Search"
+            android:label="@string/action_search" >
         </activity>
 
      </application>
