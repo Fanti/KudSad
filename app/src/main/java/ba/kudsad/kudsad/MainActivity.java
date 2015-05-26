@@ -7,6 +7,13 @@ import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.content.Intent;
+import android.util.Log;
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+import com.parse.ParsePush;
+import com.parse.SaveCallback;
+import java.text.ParseException;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -22,6 +29,8 @@ public class MainActivity extends ActionBarActivity {
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("https://www.kudsad.ba/");
 
+        Parse.initialize(this, "Rb3YC37jL0UI7We20J7FIIVDaJ5INyitZkHfT1A6", "BfJmKPJVzJHAQvLNDB0izPbDRVT7S4VL8se52oEK");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 
 
